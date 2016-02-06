@@ -8,7 +8,8 @@ arrIN=(${VERSION//./ })
 major=${arrIN[0]}
 minor=${arrIN[1]}
 
-ALL="core customuser basic alphanumeric slashless namespaced related validation gis gis_spatialite content_gfk authorization"
+GIS_TESTS="gis gis_spatialite"
+ALL="core customuser basic alphanumeric slashless namespaced related validation $GIS_TESTS content_gfk authorization"
 
 if [ $# -eq 0 ]; then
     PYTESTPATHS=$ALL
